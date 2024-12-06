@@ -1,6 +1,6 @@
 # Data Analyst Assistant
 
-A Streamlit-based application that generates and executes Python code for various data analysis tasks using AWS Bedrock's Claude-3 LLM. This tries to simplify demonstration of [Bridgewater associates' Investment Analysis](https://aws.amazon.com/tw/awstv/watch/5b319684c66/).
+Inspired by [Bridgewater associates' Investment Analysis](https://aws.amazon.com/tw/awstv/watch/5b319684c66/). This Streamlit-based application generates and executes Python code for various data analysis tasks using AWS Bedrock's Claude-3 LLM. 
 
 
 ## Description
