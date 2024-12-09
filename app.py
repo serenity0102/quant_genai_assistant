@@ -33,18 +33,13 @@ class BedrockAgent:
         
         # Check if query is about sharpe ratio
         # This is an exmaple to specify the data source
-        elif any(term in user_query.lower() for term in ['sharpe', 'sharpe ratio', 'return']):
+        elif any(term in user_query.lower() for term in ['hsi', 'sharpe', 'sharpe ratio', 'return']):
             return f"""You have the market data in file hsi.2024.csv with column Date,Open,High,Low,Close,Adj Close,Volume.
                 You can read HSI market data from file hsi.2024.csv.
                 Generate Python code for the following requirement using Streamlit for any visualizations and calculations. 
                 Important: Use st.pyplot() instead of plt.show() for matplotlib plots. 
                 Only provide the code, no explanations, no beginning ```python and ending ```: {user_query}\n\nAssistant:
                 """
-
-        # Check if query is about HSI market data
-        # another example to hard code pre-defined code
-        elif any(term in user_query.lower() for term in ['hsi', 'hang seng', 'market data', 'hong kong stock']):
-            return self.read_file('md.py')
         
         # For other queries, use LLM handle it
         else:
